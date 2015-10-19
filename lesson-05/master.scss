@@ -1,0 +1,10 @@
+// Importing Typographic
+@import "bower_components/typographic/scss/typographic";
+
+$header-ratio       : $perfect-fourth;
+$body-font          : $geneva;
+$header-font        : $antiqua;
+
+// Fire up the mixin
+@include typographic;
+@include grid-overlay(red, 17);

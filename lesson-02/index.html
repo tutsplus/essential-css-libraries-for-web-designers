@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Essential CSS Libraries for Web Designers - Lesson 02</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" media="screen">
+
+        <style media="screen">
+            #hideMe {
+                animation-duration: 3s;
+                animation-delay: 5s;
+                animation-iteration-count: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>A simple example of using Animate.css</h1>
+
+        <p>
+            Here's the element that will be animated.
+        </p>
+
+        <button type="button" name="button" class="animated bounceIn" id="btn">Click me</button>
+
+        <p id="hideMe">
+            I'm a paragraph that will be hidden after btn click.
+        </p>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $( function() {
+                $( "#btn" ).on( "click", function() {
+                    $( "#hideMe" ).addClass( "animated fadeOut" );
+                } );
+            } );
+        </script>
+    </body>
+</html>

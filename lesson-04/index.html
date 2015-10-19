@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Essential CSS Libraries for Web Designers - Lesson 04</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="master.css" media="screen">
+
+        <style>
+            #notification {
+                position: absolute;
+                background: #ccc;
+                color: #333;
+                right: 2em;
+                top: 2em;
+                padding: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animated slow ease">
+            <p>
+                This is an animated element.
+            </p>
+        </div>
+
+        <div class="slow bounceIn" id="notification">
+            This is some content.
+        </div>
+
+        <ul class="series">
+            <li class="elem1">Hey, I'm a list item.</li>
+            <li class="elem2">I'm number two.</li>
+            <li class="elem3">And the last one.</li>
+        </ul>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/motion-ui/dist/motion-ui.min.js"></script>
+
+        <script type="text/javascript">
+            $( function() {
+                var $notification = $( "#notification" );
+
+                MotionUI.animateIn( $notification, "fadeIn", function() {
+                    $notification.addClass( "long-delay" );
+
+                    MotionUI.animateOut( $notification, "fadeOut" );
+                } );
+
+                $( ".series" ).addClass( "is-animating" );
+            } );
+        </script>
+    </body>
+</html>

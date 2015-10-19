@@ -1,0 +1,22 @@
+@import "bower_components/motion-ui/src/motion-ui.scss";
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.animated {
+    @include mui-animation(wiggle);
+}
+
+@include mui-series {
+    .elem1 {
+        @include mui-queue(1s, 1s, fade);
+    }
+
+    .elem2 {
+        @include mui-queue(1s, 2s, fade);
+    }
+
+    .elem3 {
+        @include mui-queue(1s, 3s, fade);
+    }
+}

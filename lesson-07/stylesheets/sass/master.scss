@@ -1,0 +1,17 @@
+@import "bourbon/bourbon";
+
+.box {
+    @include linear-gradient(to left, #1e5799, tint(#1e5799, 30%));
+    color: white;
+    padding: em(20px);
+    margin: em(20px, 20px);
+
+    @include border-right-radius(5px);
+    @include border-left-radius(5px);
+
+    // @include position(absolute, 50% 50% null null);
+
+    .triangle {
+        @include triangle(1em, white, up-right);
+    }
+}

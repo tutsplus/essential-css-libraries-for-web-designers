@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Essential CSS Libraries for Web Designers - Lesson 03</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="bower_components/hover/css/hover-min.css" media="screen">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" media="screen">
+
+        <style media="screen">
+            .button {
+                background-color: #ccc;
+                padding: 1em;
+                display: inline-block;
+                text-decoration: none;
+                color: #000;
+            }
+
+            #subscribe-btn {
+                padding-right: 2.5em;
+            }
+
+            #subscribe-btn:before {
+                content: "\f0e0";
+            }
+
+            .container {
+                background: #ccc;
+                padding: 2em;
+                margin: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>A simple example of using Hover.css</h1>
+
+        <p>
+            This is a simple button.
+        </p>
+
+        <a href="#" class="button hvr-skew">This is a button</a>
+
+        <p>
+            Here's another button with an icon inside it.
+        </p>
+
+        <a href="#" class="button hvr-icon-wobble-horizontal" id="subscribe-btn">Subscribe</a>
+
+        <div class="container hvr-float-shadow">
+            <p>
+                This is the container content.
+            </p>
+        </div>
+    </body>
+</html>

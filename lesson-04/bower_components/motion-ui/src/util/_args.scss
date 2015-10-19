@@ -1,0 +1,17 @@
+/// Processes a series of keyframe function arguments.
+/// @access private
+@function -mui-process-args($args...) {
+  @if length($args) == 1 {
+    $arg: nth($args, 1);
+
+    @if type-of($arg) == 'string' {
+      @return call($arg);
+    }
+    @else if type-of($arg) == 'map' {
+      @return $arg;
+    }
+  }
+  @else {
+    @return -mui-keyframe-combine($args...);
+  }
+}

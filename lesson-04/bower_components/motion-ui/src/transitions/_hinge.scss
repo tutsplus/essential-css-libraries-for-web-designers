@@ -1,0 +1,42 @@
+/// Creates a hinge transition by rotating the element.
+/// @param {Keyword} $state [in] - State to transition to.
+/// @param {Keyword} $from [left] - Edge of the element to rotate from. Can be `top`, `right`, `bottom`, or `left`.
+/// @param {Keyword} $axis [edge] - Axis of the element to rotate on. Can be `edge` or `center`.
+/// @param {Number} $perspective [2000px] - Perceived distance between the viewer and the element. A higher number will make the rotation effect more pronounced.
+/// @param {Keyword} $turn-origin [from-back] - Side of the element to start the rotation from. Can be `from-back` or `from-front`.
+/// @param {Boolean} $fade [true] - Set to `true` to fade the element in or out simultaneously.
+/// @param {Keyword} $duration [500ms] - Length (speed) of the transition.
+/// @param {Keyword|Function} $timing [linear] - Easing of the transition.
+/// @param {Number} $delay [0s] - Delay in seconds or milliseconds before the transition starts.
+@mixin mui-hinge (
+  $state: in,
+  $from: left,
+  $axis: edge,
+  $perspective: 2000px,
+  $turn-origin: from-back,
+  $fade: map-get($motion-ui-settings, hingeAndFade),
+  $duration: null,
+  $timing: null,
+  $delay: null
+) {
+  $hinge: hinge($state, $from, $axis, $perspective, $turn-origin);
+
+  @include transition-start($state) {
+    @include transition-basics($duration, $timing, $delay);
+    @include -mui-keyframe-get($hinge, 0);
+
+    @if $fade {
+      transition-property: transform, opacity;
+      opacity: if($state == in, 0, 1);
+    }
+    @else {
+      transition-property: transform, opacity;
+    }
+  }
+
+  @include transition-end($state) {
+    @include -mui-keyframe-get($hinge, 100);
+
+    @if $fade { opacity: if($state == in, 1, 0); }
+  }
+}

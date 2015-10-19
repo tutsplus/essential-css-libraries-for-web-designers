@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.grid {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, transparent 0.36765%, rgba(102, 102, 255, 0.25) 0.36765%, rgba(179, 179, 255, 0.25) 3.30882%, transparent 3.30882%, transparent 4.04412%, rgba(102, 102, 255, 0.25) 4.04412%, rgba(179, 179, 255, 0.25) 9.92647%, transparent 9.92647%, transparent 10.66176%, rgba(102, 102, 255, 0.25) 10.66176%, rgba(179, 179, 255, 0.25) 19.48529%, transparent 19.48529%, transparent 20.22059%, rgba(102, 102, 255, 0.25) 20.22059%, rgba(179, 179, 255, 0.25) 26.10294%, transparent 26.10294%, transparent 26.83824%, rgba(102, 102, 255, 0.25) 26.83824%, rgba(179, 179, 255, 0.25) 29.77941%, transparent 29.77941%, transparent 30.51471%, rgba(102, 102, 255, 0.25) 30.51471%, rgba(179, 179, 255, 0.25) 33.45588%, transparent 33.45588%, transparent 34.19118%, rgba(102, 102, 255, 0.25) 34.19118%, rgba(179, 179, 255, 0.25) 37.13235%, transparent 37.13235%, transparent 37.86765%, rgba(102, 102, 255, 0.25) 37.86765%, rgba(179, 179, 255, 0.25) 43.75%, transparent 43.75%, transparent 44.48529%, rgba(102, 102, 255, 0.25) 44.48529%, rgba(179, 179, 255, 0.25) 53.30882%, transparent 53.30882%, transparent 54.04412%, rgba(102, 102, 255, 0.25) 54.04412%, rgba(179, 179, 255, 0.25) 65.80882%, transparent 65.80882%, transparent 66.54412%, rgba(102, 102, 255, 0.25) 66.54412%, rgba(179, 179, 255, 0.25) 81.25%, transparent 81.25%, transparent 81.98529%, rgba(102, 102, 255, 0.25) 81.98529%, rgba(179, 179, 255, 0.25) 99.63235%, transparent 99.63235%);
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+  .grid:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.sidebar {
+  width: 31.66667%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%; }
+
+.content {
+  width: 65%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%; }
+
+@media (max-width: 768px) {
+  .sidebar,
+  .content {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+@media (max-width: 480px) {
+  .sidebar,
+  .content {
+    width: 100%;
+    float: left;
+    margin-left: 0.36765%;
+    margin-right: 0.36765%; } }
+
+/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,18 @@
+.box {
+  background-color: #1e5799;
+  background-image: -webkit-linear-gradient(right, #1e5799, #6289b8);
+  background-image: linear-gradient(to left,#1e5799, #6289b8);
+  color: white;
+  padding: 1.25em;
+  margin: 1em;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; }
+  .box .triangle {
+    height: 0;
+    width: 0;
+    border-top: 1em solid white;
+    border-left: 1em solid transparent; }
+
+/*# sourceMappingURL=master.css.map */
