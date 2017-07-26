@@ -1,0 +1,49 @@
+// Override default hamburger settings.
+$hamburger-padding-x                       : 15px;
+$hamburger-padding-y                       : 15px;
+$hamburger-layer-width                     : 30px;
+$hamburger-layer-height                    : 4px;
+$hamburger-layer-spacing                   : 4px;
+
+// Import Hamburgers.
+@import 'bower_components/css-hamburgers/_sass/hamburgers/hamburgers';
+
+.menu {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    text-align: right;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 5px;
+}
+
+.menu-content {
+    display: none;
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            text-align: left;
+
+            a {
+                width: 15rem;
+                display: block;
+                padding: 1rem;
+                text-decoration: none;
+                color: rgba(0, 0, 0, .5);
+
+                &:hover {
+                    color: rgba(0, 0, 0, 1);
+                    background-color: rgba(0, 0, 0, .15);
+                }
+            }
+        }
+    }
+}
+
+.menu.visible .menu-content {
+    display: block;
+}

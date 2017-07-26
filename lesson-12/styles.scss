@@ -1,0 +1,19 @@
+// Override variables.
+$spinkit-spinner-margin: 40px auto;
+$spinkit-size: 40px;
+$spinkit-spinner-color: #333;
+
+// Import SpinKit.
+@import 'bower_components/spinkit/scss/spinkit';
+
+// Import select spinners.
+// @import 'bower_components/spinkit/scss/spinners/3-wave.scss';
+// @import 'bower_components/spinkit/scss/spinners/8-circle.scss';
+
+// Page styles.
+.page-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

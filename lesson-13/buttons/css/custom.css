@@ -1,0 +1,21 @@
+/* line 1, ../scss/custom.scss */
+body,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 6, ../scss/custom.scss */
+.container {
+  width: 50%;
+  margin: 10rem auto;
+}
+
+/* line 12, ../scss/custom.scss */
+form label {
+  display: block;
+}
+/* line 16, ../scss/custom.scss */
+form input,
+form textarea {
+  padding: .5rem;
+}

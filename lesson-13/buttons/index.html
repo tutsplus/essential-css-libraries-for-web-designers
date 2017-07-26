@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Essential CSS Libraries for Web Designers - Lesson 13</title>
+    <meta name="author" content="Adi Purdila">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </p>
+
+            <p>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </p>
+
+            <p>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            </p>
+
+            <p>
+                <!--<a href="#" class="button button-pill button-action">Send Message</a>-->
+                <button type="button" class="button button-rounded button-flat-action"><i class="fa fa-envelope"></i> Send Message</button>
+            </p>
+        </form>
+    </div> <!-- end .container -->
+</body>
+</html>

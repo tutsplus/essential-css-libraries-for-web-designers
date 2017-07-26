@@ -1,0 +1,20 @@
+body,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 10rem auto;
+}
+
+form {
+    label {
+        display: block;
+    }
+
+    input,
+    textarea {
+        padding: .5rem;
+    }
+}
